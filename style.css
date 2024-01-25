@@ -9,6 +9,11 @@
     src: url("fonts/Montserrat/Montserrat-Bold.ttf")
 }
 
+@font-face {
+    font-family: Cabin-Medium;
+    src: url("fonts/Cabin/Cabin-Medium.ttf")
+}
+
 * {
     scroll-behavior: smooth;
     padding: 0;
@@ -19,19 +24,19 @@
 body{
     background: #E6ECEE;
 }
-
+/* 
 div, main, h1{
     border: 1px solid red;
-}
+} */
 
-header {
+nav {
     position: sticky;
     top: 0;
     display: flex;
     background: #FFFFFF;
-    padding: 20px 40px;
-    box-shadow: 1px 1px 10px #cecece;
-    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 1px 1px 10px #36363691;
+    justify-content: center;
     align-items: center;
 }
 
@@ -45,6 +50,7 @@ header {
 .link {
     text-decoration: none;
 }
+
 
 nav .link-container {
     gap: 40px;
@@ -62,29 +68,29 @@ main .link{
     color: white;
 }
 
-
-h1, h2, h3, h4, h5, h6{
-    font-family: Montserrat-Bold;
-}
-
 .btn {
     background: none;
     border: none;
-    
 }
 
 .nav-btn {
     background: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 15px;
 }
 
 .btn:hover, .btn:active{
-    filter: brightness(110%);
+    filter: brightness(80%);
+}
+
+
+h1, h2, h3, h4, h5, h6, #greeting{
+    font-family: Montserrat-Bold;
 }
 
 .pfp-con, .pfp {
     height: 150px;
     width: 150px;
-    
 }
 .pfp-container {
     overflow-x: hidden;
@@ -93,24 +99,25 @@ h1, h2, h3, h4, h5, h6{
 
 .pfp {
     object-fit:cover;
-    object-position: cetner center;
+    object-position: center center;
 }
 
-.line-blue {
-    width: 5rem;
-    border-bottom: 2px solid #6E9FC1;
+.more {
+    margin-top: 10dvh;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
 }
 
-#about-me-container {
-    background: 
-        url("media/backgrounds/bg1.jpg") no-repeat,
-        rgba(0, 0, 0, 0.75);
+
+#hero {
+    background: url("media/backgrounds/bg1.jpg") no-repeat, rgba(0, 0, 0, 0.75);
     background-blend-mode: multiply;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     
-    height: 62.5dvh;
+    height: 75dvh;
     color: white;
     display: flex;
     gap: 10px;
@@ -118,17 +125,57 @@ h1, h2, h3, h4, h5, h6{
     justify-content: space-around;
 }
 
-#about-me {
+#hero-card {
     display: flex;
     gap: 10px;
     flex-direction: column;
-    align-items: center;
-    max-width: 15rem;
-    text-align: center;
+    align-items: start;
+    max-width: 20rem;
 }
 
 #welcome-section {
     padding: 20px 40px;
     background: #FFFFFF;
     box-shadow: 1px 1px 10px #cecece;
+}
+
+section {
+    padding: 70px 50dvh;
+    gap: 5dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.section-top {
+    display: flex;
+    gap: 10dvh;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.section-bottom {
+    font-family: Cabin-Medium;
+    color: rgb(97, 97, 97);
+}
+
+.my-skill-sey {
+    color: black;
+    font-size: 2rem;
+    border: 1px solid red;
+}
+#about-me div {
+    max-width: 50dvh;
+}
+
+#about-me {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#greeting{
+    font-size: 2rem;
 }

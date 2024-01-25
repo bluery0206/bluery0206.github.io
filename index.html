@@ -5,64 +5,69 @@
     <title>Mark Ryan Hilario | Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body
     <!-- the anchor tag only scrolls up to the name and does not fully display the bg if the href target is 'about-me' -->
     <span id="top"></span>
     
-    
-    
-    <header>
-        <div>Mark Ryan <b>Hilario</b></div> 
-        
-        <nav>
-            <ul class="link-container">
-                <li class="btn nav-btn"><a class="link" href="#top">About Me</a></li>
-                <li class="btn nav-btn"><a class="link" href="#videos">Videos</a></li>
-                <li class="btn nav-btn"><a class="link" href="#gallery">Gallery</a></li>
-                <li class="btn nav-btn"><a class="link" href="#contacts">Contacts</a></li>
-            </ul>
-            
-        </nav>
-    </header>
+    <nav>
+        <ul class="link-container">
+            <li class="btn nav-btn"><a class="link" href="#top">About Me</a></li>
+            <li class="btn nav-btn"><a class="link" href="#videos">Videos</a></li>
+            <li class="btn nav-btn"><a class="link" href="#gallery">Gallery</a></li>
+            <li class="btn nav-btn"><a class="link" href="#contacts">Contacts</a></li>
+            <li class="btn nav-btn"><a class="link" href="idk.html"target="_blank">idk</a></li>
+            <li class="btn nav-btn"><a class="link" href="idk2.html"target="_blank">idk2</a></li>
+            <li class="btn nav-btn"><a class="link" href="idk3.html"target="_blank">idk3</a></li>
+        </ul>
+    </nav>
     
     <main>
-        <div id="about-me-container">
-            <div id="about-me">
+        <div id="hero">
+            <div id="hero-card">
                 <a class="pfp-container" href="media/profiles/pfp1.jpg"><img class="pfp" src="media/profiles/pfp1.jpg" alt="profile picture"></a>
-                <h2>Mark Ryan Hilario</h2>
-                <div class="line-blue"></div>
-                <div>BSCS 3-A</div>
-                <ul class="link-container">
-                    <li class="btn"><a class="link" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" alt="facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li><a class="link" href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP"><i class="fab fa-youtube"></i></a></li>
-                    <li><a class="link" href="https://x.com/bluery___?s=09"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-            <section>
-                <h3>Hi, it's me</h3>
                 <h1>Mark Ryan Hilario</h1>
-                <p>a third-year college student at Bohol Island State University pursuing computer science. I have a good foundation in web development, with a focus on MySQL, PHP, HTML, and CSS. I've developed practical knowledge in creating dynamic and responsive web applications through my education and practical assignments.</p>
-            </section>
-        </div>
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
-        
-        <div id="welcome-section">
-        </div>
-        
-        
-        <div id="personal">
-            <div>
-                <img class="pfp" src="media/profiles/pfp1.jpg">
-                <p>I am specializing in Computer Science </p>
+                <h4>BSCS 3-A</h4>
+                <small>Aspiring Developer & Creative Soul</small>
+                <ul class="link-container">
+                    <li class="btn"><a class="link icon" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" alt="facebook link" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li class="btn"><a class="link icon" href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP" alt="youtube link" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li class="btn"><a class="link icon" href="https://x.com/bluery___?s=09" alt="twitter link" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+
+                <a class="more" href="#about-me-container">Scroll for more &#62;&#62;</a>
             </div>
+            <div></div>
+        </div>
         
-            <div>
-                <img class="pfp" src="media/profiles/pfp1.jpg">
-                <p>We used to live in Trece Martires, Cavite but migrated here in Poblacion Sur, Clarin, Bohol in 2010 where I spent most of my life and had lots of wonderful experiences.</p>
+        <section>
+            <div class="section-top">
+                <div>
+                    <div style="font-size: 2rem;">Hi, it's me</div>
+                    <div id="greeting" style="font-size: 4rem;">Mark Ryan Hilario</div>
+                </div>
+                <div id="about-me" class="font-cabin">a third-year college student at Bohol Island State University pursuing computer science. I have a good foundation in web development, with a focus on MySQL, PHP, HTML, and CSS. I've developed practical knowledge in creating dynamic and responsive web applications through my education and practical assignments.</div>
             </div>
+            <div class="section-bottom">
+                21 years old | Poblacion Sur, Clarin, Bohol | Computer Science Student
+            </div>
+        </section>
+
+        <section class="my-skill-set">
+            <div>
+                <i class="fab fa-html5" style="font-size: 10rem;"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-php"></i>
+                <i class="fa fa-mysql" style="color: black;"></i>
+                <i class="fab fa-google"></i>
+            </div>
+        </section>
+        
+        <div id="about-me-container">
+            <p>We used to live in Trece Martires, Cavite but migrated here in Poblacion Sur, Clarin, Bohol in 2010 where I spent most of my life and had lots of wonderful experiences.</p>
+            <img class="pfp" src="media/profiles/pfp1.jpg">
         </div>
         
         <div id="skills">
