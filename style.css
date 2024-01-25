@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url("fonts/Montserrat-Light.ttf")
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("fonts/Montserrat-Bold.ttf")
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat-Light;
+}
+
+body{
+    background: #E6ECEE;
+}
+
+div, main, h1{
+    border: 1px solid red;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background: #FFFFFF;
+    padding: 20px 40px;
+    box-shadow: 1px 1px 10px #cecece;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.link-container {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+nav .link-container {
+    gap: 40px;
+}
+
+nav .link {
+    color: black;
+}
+
+main .link-container {
+    gap: 20px;
+}
+
+main .link{
+    color: white;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat-Bold;
+}
+
+.btn {
+    background: none;
+    border: none;
+    
+}
+
+.nav-btn {
+    background: #FFFFFF;
+}
+
+.btn:hover, .btn:active{
+    filter: brightness(110%);
+}
+
+.pfp-con, .pfp {
+    height: 150px;
+    width: 150px;
+    
+}
+.pfp-container {
+    overflow-x: hidden;
+    border-radius: 50%;
+}
+
+.pfp {
+    object-fit:cover;
+    object-position: cetner center;
+}
+
+.line-blue {
+    width: 5rem;
+    border-bottom: 2px solid #6E9FC1;
+}
+
+#about-me-container {
+    background: 
+        /* url("media/backgrounds/bg5.jpg") no-repeat, */
+        rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    height: 62.5dvh;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-me {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 15rem;
+    text-align: center;
+}
+
+#welcome-section {
+    padding: 20px 40px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px #cecece;
+}
