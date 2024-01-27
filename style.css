@@ -33,8 +33,8 @@ nav {
 }
 
 #pfp-container, #pfp {
-    height: 50em;
-    width: 50em;
+    height: 50rem;
+    width: 50rem;
 }
 #pfp-container {
     overflow-x: hidden;
@@ -83,7 +83,7 @@ nav {
 
 .nav-btn {
     background: #FFFFFF;
-    padding: 2em 5em;
+    padding: 2rem 5rem;
 }
 .nav-btn:hover {
     background: #2f2f2f;
@@ -94,7 +94,7 @@ nav {
 }
 .btn-white, .btn-white-rev {
     border-radius: 50px;
-    padding: 0.25em 1em;
+    padding: 0.25em 1rem;
     text-decoration: none;
 }
 .btn-white {
@@ -118,22 +118,22 @@ nav {
 
 
 .gap-05 {
-    gap: 0.5em;
+    gap: 0.5rem;
 }
 .gap-1 {
-    gap: 1em;
+    gap: 1rem;
 }
 .gap-2 {
-    gap: 2em;
+    gap: 2rem;
 }
 .gap-3 {
-    gap: 3em;
+    gap: 3rem;
 }
 .gap-4 {
-    gap: 4em;
+    gap: 4rem;
 }
 .gap-5 {
-    gap: 5em;
+    gap: 5rem;
 }
 .gap-5p {
     gap: 5%;
@@ -221,35 +221,35 @@ nav {
 
 
 .my-2 {
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .my-1 {
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 
 .py-1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .py-2 {
-    padding-bottom: 2em;
-    padding-top: 2em;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 
 .px-1 {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .px-2 {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .p-1 {
-    padding: 1em;
+    padding: 1rem;
 }
 
 
@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6, .mont-bold{
         display: block;
         background: white;
         color: black;
-        padding: 1em;
+        padding: 1rem;
     }
     .dropdown-btn:hover {
         filter: invert(100%);
@@ -401,7 +401,7 @@ h1, h2, h3, h4, h5, h6, .mont-bold{
     
     .dropdown-content li {
         width: 100%;
-        padding: 0.5em 0;
+        padding: 0.5rem 0;
         text-align: center;
     }
     
