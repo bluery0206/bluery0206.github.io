@@ -23,18 +23,17 @@
 
 body{
     background: #E6ECEE;
-    font-size: 30px;
 }
 
 nav {
     position: sticky;
     top: 0;
-    padding: 10em 40em;
+    padding: 10px 40px;
 }
 
 #pfp-container, #pfp {
-    height: 50rem;
-    width: 50rem;
+    height: 150px;
+    width: 150px;
 }
 #pfp-container {
     overflow-x: hidden;
@@ -83,7 +82,7 @@ nav {
 
 .nav-btn {
     background: #FFFFFF;
-    padding: 2rem 5rem;
+    padding: 2px 5px;
 }
 .nav-btn:hover {
     background: #2f2f2f;
@@ -94,7 +93,7 @@ nav {
 }
 .btn-white, .btn-white-rev {
     border-radius: 50px;
-    padding: 0.25em 1rem;
+    padding: 0.25rem 1rem;
     text-decoration: none;
 }
 .btn-white {
@@ -255,12 +254,12 @@ nav {
 
 /* for h1-h6 size configuration like bootstrap */
 .display-1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
 .text-2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .fw-700 {
@@ -367,7 +366,7 @@ h1, h2, h3, h4, h5, h6, .mont-bold{
     display: none;
 }
 
-@media only screen and (max-width:1080px){
+@media (max-width;768px){
     nav {
         padding: 0;
     }
