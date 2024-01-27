@@ -28,7 +28,7 @@ body{
 nav {
     position: sticky;
     top: 0;
-    padding: 10px 40px;
+    padding: 10em 40em;
 }
 
 #pfp-container, #pfp {
@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6, .mont-bold{
     display: none;
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1080px){
     nav {
         padding: 0;
     }
