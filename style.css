@@ -32,8 +32,8 @@ nav {
 }
 
 #pfp-container, #pfp {
-    height: 150px;
-    width: 150px;
+    height: 50em;
+    width: 50em;
 }
 #pfp-container {
     overflow-x: hidden;
@@ -82,7 +82,7 @@ nav {
 
 .nav-btn {
     background: #FFFFFF;
-    padding: 2px 5px;
+    padding: 2em 5em;
 }
 .nav-btn:hover {
     background: #2f2f2f;
@@ -93,7 +93,7 @@ nav {
 }
 .btn-white, .btn-white-rev {
     border-radius: 50px;
-    padding: 0.25rem 1rem;
+    padding: 0.25em 1em;
     text-decoration: none;
 }
 .btn-white {
@@ -117,22 +117,22 @@ nav {
 
 
 .gap-05 {
-    gap: 0.5rem;
+    gap: 0.5em;
 }
 .gap-1 {
-    gap: 1rem;
+    gap: 1em;
 }
 .gap-2 {
-    gap: 2rem;
+    gap: 2em;
 }
 .gap-3 {
-    gap: 3rem;
+    gap: 3em;
 }
 .gap-4 {
-    gap: 4rem;
+    gap: 4em;
 }
 .gap-5 {
-    gap: 5rem;
+    gap: 5em;
 }
 .gap-5p {
     gap: 5%;
@@ -220,31 +220,31 @@ nav {
 
 
 .my-2 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 .my-1 {
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 
 .py-1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .py-2 {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 
 .px-1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .px-2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .p-1 {
