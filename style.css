@@ -248,18 +248,18 @@ nav {
 }
 
 .p-1 {
-    padding: 1rem;
+    padding: 1em;
 }
 
 
 /* for h1-h6 size configuration like bootstrap */
 .display-1 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 
 .text-2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .fw-700 {
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6, .mont-bold{
         display: block;
         background: white;
         color: black;
-        padding: 1rem;
+        padding: 1em;
     }
     .dropdown-btn:hover {
         filter: invert(100%);
@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6, .mont-bold{
     
     .dropdown-content li {
         width: 100%;
-        padding: 0.5rem 0;
+        padding: 0.5em 0;
         text-align: center;
     }
     
