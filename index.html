@@ -5,6 +5,7 @@
     <title>Mark Ryan Hilario | Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 </head>
 
@@ -12,102 +13,232 @@
     <!-- the anchor tag only scrolls up to the name and does not fully display the bg if the href target is 'about-me' -->
     <span id="top"></span>
     
-    <nav>
-        <ul class="link-container">
-            <li class="btn nav-btn"><a class="link" href="#top">Top</a></li>
-            <li class="btn nav-btn"><a class="link" href="#personal-info">Me</a></li>
-            <li class="btn nav-btn"><a class="link" href="#my-skill-set">Skillset</a></li>
-            <li class="btn nav-btn"><a class="link" href="#portfolio">Portfolio</a></li>
-            <li class="btn nav-btn"><a class="link" href="#interests">Interests</a></li>
-            <li class="btn nav-btn"><a class="link" href="#contacts">Contacts</a></li>
-            <li class="btn nav-btn"><a class="link" href="idk.html"target="_blank">idk</a></li>
-            <li class="btn nav-btn"><a class="link" href="idk2.html"target="_blank">idk2</a></li>
-            <li class="btn nav-btn"><a class="link" href="idk3.html"target="_blank">idk3</a></li>
-        </ul>
+    <nav class="shadow bg-white">
+        <div class="dropdown row center">
+            <button class="btn dropdown-btn"><span class="material-symbols-rounded" style="font-size: 2rem;">menu</span></button>
+        
+            <ul id="ul-nav" class="dropdown-content w-100 flex-wrap center list-style-none gap-5p row">
+                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#top">Back to top</a></li>
+                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#personal-info">About Me</a></li>
+                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#skill-set">Skillset</a></li>
+                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#portfolio">Portfolio</a></li>
+                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
     </nav>
     
     <main>
-        <div id="hero">
-            <div id="hero-card">
-                <a class="pfp-container" href="media/profiles/pfp1.jpg"><img class="pfp" src="media/profiles/pfp1.jpg" alt="profile picture"></a>
+        <div id="hero" class="bg-hero section row gap-1  text-white justify-around align-center">
+            <div id="hero-container" class="col gap-1 max-width-40">
                 <h1>Mark Ryan Hilario</h1>
-                <h4>BSCS 3-A</h4>
-                <small>Aspiring Developer & Creative Soul</small>
-                <ul class="link-container">
-                    <li class="btn"><a class="link icon" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" alt="facebook link" target="_blank" title="Personal facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li class="btn"><a class="link icon" href="https://www.facebook.com/hilariomrkryn" alt="facebook page link" target="_blank" title="Facebook Page"><i class="fab fa-facebook"></i></a></li>
-                    <li class="btn"><a class="link icon" href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP" alt="youtube link" target="_blank" title="Youtube Channel"><i class="fab fa-youtube"></i></a></li>
-                    <li class="btn"><a class="link icon" href="email: hilariomarkryan3@gmail.com" alt="personal email" target="_blank" title="Personal Email"><i class="fab fa-google"></i></a></li>
-                    <li class="btn"><a class="link icon" href="email: markryan.hilario@bisu.edu.ph" alt="school email" target="_blank" title="School Email"><i class="fab fa-google"></i></a></li>
-                    <li class="btn"><a class="link icon" href="https://github.com/bluery0206/amag-amag" alt="github repo" target="_blank" title="Github Repo"><i class="fab fa-github"></i></a></li>
-                    <li class="btn"><a class="link icon" href="https://github.com/bluery0206" alt="github" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
-                    <!-- <li class="btn"><a class="link icon" href="https://x.com/bluery___?s=09" alt="twitter link" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+                <h3>BSCS 3-A</h3>
+                <p><small>Aspiring Developer & Creative Soul</small></p>  
+                              
+                <ul class="list-style-none gap-1 row flex-wrap">
+                    <li class="btn"><a class="text-deco-none text-white"                                         href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" alt="facebook link" target="_blank" title="Personal facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li class="btn"><a class="text-deco-none text-white" href="mailto: hilariomarkryan3@gmail.com" alt="personal email" target="_blank" title="Personal Email"><i class="fab fa-google"></i></a></li>
+                    <li class="btn"><a class="text-deco-none text-white" href="mailto: markryan.hilario@bisu.edu.ph" alt="school email" target="_blank" title="School Email"><i class="fab fa-google"></i></a></li>
+                    <li class="btn"><a class="text-deco-none text-white" href="https://github.com/bluery0206" alt="github" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
                 </ul>
-                
-                <div>
-                    <a class="btn" href="#personal-info">Contact Me</a>
-                    <a class="more" href="#personal-info">Scroll for more &#62;&#62;</a>
-                </div>
+               
+                <a class="text-white my-1 text-deco-none" href="#personal-info">Scroll for more &#62;&#62;</a>
             </div>
+            
             <div></div>
         </div>
+       
+       
+        <!-- PERSONAL INFO -->
         
-        <section id="personal-info">
-            <div class="section-top">
-                <div>
-                    <div style="font-size: 2rem;">Hi, it's me</div>
-                    <div id="greeting" style="font-size: 4rem;">Mark Ryan Hilario</div>
+        <section id="personal-info" class="section shadow bg-white row center">
+            <div id="personal-info-container" class="row justify-center gap-1">
+                <div id="pic-left" class="col justify-center w-30 gap-1">
+                        <a id="pfp-container" href="media/profiles/pfp2.jpg"><img id="pfp" class="object-fit-cover w-100" src="media/profiles/pfp2.jpg" alt="profile picture"></a>
+                    <div class="col ">
+                        <p>Hi, it's me</p>
+                        <h2 class="display-1">Mark Ryan Hilario</>
+                    </div>
+                    
+                    <ul class="list-style-none col gap-05">
+                        <li class="row align-center"><span class="material-symbols-rounded" style="font-size: 1rem;">cake</span> <small>Sept 06, 2002</small></li>
+                        <li class="row align-center"><span class="material-symbols-rounded" style="font-size: 1rem;">home</span> <small>Poblacion Sur, Clarin, Bohol</small></li>
+                        
+                        <ul class="list-style-none row gap-1">
+                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">music_note</span></li>
+                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">stylus_note</span></li>
+                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">animation</span></li>
+                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">movie</span></li>
+                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">edit</span></li>
+                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">code</span></li>
+                        </ul>
+                    </ul>
                 </div>
-                <div id="about-me" class="font-cabin">a third-year college student at Bohol Island State University pursuing computer science. I have a good foundation in web development, with a focus on MySQL, PHP, HTML, and CSS. I've developed practical knowledge in creating dynamic and responsive web applications through my education and practical assignments.</div>
-            </div>
-            <div class="section-bottom">
-                21 years old | Poblacion Sur, Clarin, Bohol | Computer Science Student
+                
+                <div id="pic-right" class="col w-30 px-1 py-2 align-center gap-1 bg-blue-m text-white">
+                    <p class="cabin">a third-year college student at Bohol Island State University pursuing computer science.</p>
+                    <p class="cabin">I have a good foundation in web development, with a focus on MySQL, PHP, HTML, and CSS.</p>
+                    <p class="cabin">I've developed practical knowledge in creating dynamic and responsive web applications through my education and practical assignments.</p>
+                </div>
             </div>
         </section>
 
-        <section id="my-skill-set" class="my-skill-set">
+
+        <!-- SKILL SET -->
+        
+        <section id="skill-set" class="section col center gap-2 bg-blue-d text-white">
             <h2>MY SKILLSET</h2>
-            <ul>
-                <li><img src="media/icons/html.png" alt="html logo"></li>
-                <li><img src="media/icons/css.png" alt="css logo"></li>
-                <li><img src="media/icons/php.png" alt="php logo"></li>
-                <li><img src="media/icons/mysql.png" alt="mysql logo"></li>
-            </ul>
-            <div>
-                Passionate about creating clear, fast, and readable code</div>
+            
+            <div class="col gap-1 align-center">
+                <h4><q>Random s*** go</q> level</h4>
+                
+                <ul class="row gap-2 list-style-none justify-center">
+                    <li class="row align-center w-10"><img class="w-100" src="media/icons/html.png" alt="html logo"></li>
+                    <li class="row align-center w-10"><img class="w-100" src="media/icons/css.png" alt="css logo"></li>
+                    <li class="row align-center w-10"><img class="w-100" src="media/icons/php.png" alt="php logo"></li>
+                    <li class="row align-center w-10"><img class="w-100" src="media/icons/mysql.png" alt="mysql logo"></li>
+                </ul>
+            </div>
+            
+            <div class="col gap-1 align-center">
+                <h5>Introduction Level</h5>
+                
+                <ul class="row gap-2 list-style-none justify-center">
+                    <li class="row align-center w-5"><img class="w-100" src="media/icons/python.png" alt="python logo"></li>
+                    <li class="row align-center w-5"><img class="w-100" src="media/icons/java.png" alt="java logo"></li>
+                    <li class="row align-center w-5"><img class="w-100" src="media/icons/javascript.png" alt="javascript logo"></li>
+                    <li class="row align-center w-5"><img class="w-100" src="media/icons/android-studio.png" alt="android studio logo"></li>
+                </ul>
+            </div>
+            
+            <div class="row justify-around align-center gap-1">
+                <p>Need help?</p>
+                <a class="row align-center btn btn-white gap-05" href="#connect" alt="connect button"><span class="material-symbols-rounded" style="font-size: 1rem;">link</span>Connect</i></a>
+            </div>
         </section>
 
-        <section id="portfolio" class="portfolio">
+
+        <!-- PORTFOLIO -->
+        
+        <section id="portfolio" class="section col center gap-2">
             <h2>PORTFOLIO</h2>
-            <ul>
-            </ul>
-            <div>
-                Passionate about creating clear, fast, and readable code</div>
-        </section>
+            
+            <div id="project-list" class="row gap-1 w-100 justify-center flex-wrap">
+                
+                <!-- inBenta -->
+                <div class="project col gap-1 w-40 py-1 px-2 bg-white justify-between shadow">
+                    <div class="col">
+                        <h4 class="text-center">inBenta</h4>
+                        <p class="text-wrap">Personal Project: An inventory management system</p>   
+                    </div>
+                    
+                    <div class="row flex-wrap w-100 gap-1 justify-center">
+                        <a class="w-40" href="media/portfolio/inbenta/inbenta_1.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_1.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/inbenta/inbenta_2.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_2.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/inbenta/inbenta_3.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_3.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/inbenta/inbenta_4.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_4.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/inbenta/inbenta_5.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_5.png" alt=""></a>
+                    </div>
+                    
+                    <div class="row justify-between align-center">
+                        <a href="https://github.com/bluery0206/inBenta" target="_blank"><i class="fab fa-github"> Github Repository</i></a>
+                        <a href="inbentaproject.000webhostapp.com"><span class="underline text-ellipse">inBenta</span></a>
+                    </div>
+                </div>
 
-        <section id="interests" class="interests">
-            <h2>INTERESTS</h2>
-            <ul>
-            </ul>
-            <div>
-                Passionate about creating clear, fast, and readable code</div>
+                <!-- Fwipper -->
+                <div class="project col gap-1 w-40 py-1 px-2 bg-white shadow">
+                    <div class="col">
+                        <h4 class="text-center">Fwipper</h4>
+                        <p class="text-wrap">Personal Project: an attempt to replicate X or Twitter</p>        
+                    </div>
+                    
+                    <div class="row flex-wrap w-100 gap-1 justify-center">
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_1.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_1.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_2.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_2.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_3.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_3.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_4.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_4.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_5.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_5.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_6.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_6.png" alt=""></a>
+                        <a class="w-40" href="media/portfolio/fwipper/fwipper_7.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_7.png" alt=""></a>
+                    </div>
+                    
+                    <div class="row justify-between align-center">
+                        <a href="https://github.com/bluery0206/fwipper" target="_blank"><i class="fab fa-github"> Github Repository</i></a>
+                        <a href="fwipper.000webhostapp.com"><span class="underline text-ellipse">fwipper.com</span></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <ul class="link-container">
-            <li class="btn"><a class="link icon" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" alt="facebook link" target="_blank" title="Personal facebook"><i class="fab fa-facebook"></i></a></li>
-            <li class="btn"><a class="link icon" href="https://www.facebook.com/hilariomrkryn" alt="facebook page link" target="_blank" title="Facebook Page"><i class="fab fa-facebook"></i></a></li>
-            <li class="btn"><a class="link icon" href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP" alt="youtube link" target="_blank" title="Youtube Channel"><i class="fab fa-youtube"></i></a></li>
-            <li class="btn"><a class="link icon" href="email: hilariomarkryan3@gmail.com" alt="personal email" target="_blank" title="Personal Email"><i class="fab fa-google"></i></a></li>
-            <li class="btn"><a class="link icon" href="email: markryan.hilario@bisu.edu.ph" alt="school email" target="_blank" title="School Email"><i class="fab fa-google"></i></a></li>
-            <li class="btn"><a class="link icon" href="https://github.com/bluery0206/amag-amag" alt="github repo" target="_blank" title="Github Repo"><i class="fab fa-github"></i></a></li>
-            <li class="btn"><a class="link icon" href="https://github.com/bluery0206" alt="github" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
-            <!-- <li class="btn"><a class="link icon" href="https://x.com/bluery___?s=09" alt="twitter link" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
-        </ul>
 
+
+    <!-- FOOTER -->
         
-        <p>&copy; 2024 Aori Aohara</p>
+    <footer id="contacts" class="section col bg-grey-d align-center justify-between text-white">
+        
+        <div class="col align-center w-fit">
+            <div id="contacts-container" class="row gap-2">
+                <div class="max-width-20 col justify-center">
+                    <h2>MARK RYAN HILARIO</h2>
+                    <h4>BSCS 3-A</h4>
+                </div>
+                
+                <div class="col gap-2 justify-center max-width-20 text-wrap">
+                    <div class="col gap-05">
+                        <h4>Links</h4>
+                        
+                        <ul class="list-style-none col gap-05">
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" target="_blank" title="https://www.facebook.com/profile.php?id=100069249543203&mibextid"><i class="fab fa-facebook"></i><span class="underline text-ellipse">Mark Ryan Hilario</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206" target="_blank" title="https://github.com/bluery0206"><i class="fab fa-facebook"></i><span class="underline text-ellipse">bluery0206</span></a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="col gap-05">
+                        <h4>Emails</h4>
+                        
+                        <ul class="list-style-none col gap-05">
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="mailto: hilariomarkryan3@gmail.com" title="hilariomarkryan3@gmail.com"><i class="fab fa-google"></i><span class="underline text-ellipse">hilariomarkryan3@gmail.com</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="mailto: markryan.hilario@bisu.edu.ph" title="markryan.hilario@bisu.edu.ph"><span class="material-symbols-rounded" style="font-size: 1rem;">book</span><span class="underline text-ellipse">markryan.hilario@bisu.edu.ph</span></a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col gap-05">
+                        <h4>Unrelated Personal Links</h4>
+                        
+                        <ul class="list-style-none col gap-05">
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://www.facebook.com/hilariomrkryn" target="_blank" title="https://www.facebook.com/hilariomrkryn"><i class="fab fa-facebook"></i><span class="underline text-ellipse">Ryan Hilario</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP" target="_blank" title="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP"><i class="fab fa-youtube"></i><span class="underline text-ellipse">Ryan</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://x.com/bluery___?s=09" target="_blank" title="https://x.com/bluery___?s=09"><i class="fab fa-twitter"></i><span class="underline text-ellipse">bluery___</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="col gap-2 max-width-20">
+                    <div class="col gap-05">
+                        <h4>Personal Project Links</h4>
+                        
+                        <ul class="list-style-none col gap-05">
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="inbentaproject.000webhostapp.com" target="_blank" title="inbentaproject.000webhost.com"><span class="material-symbols-rounded" style="font-size: 1rem;">inventory</span><span class="underline text-ellipse">inBenta</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="fwipper.000webhostapp.com" target="_blank" title="fwipper.000webhost.com"><i class="fab fa-twitter"></i><span class="underline text-ellipse">Fwipper</span></a></li>
+                        </ul>
+                    </div>
+            
+                    
+                    <div class="col gap-05">
+                        <h4>Personal Project Github Repository</h4>
+                        
+                        <ul class="list-style-none col gap-05">
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206/inBenta" target="_blank" title="https://github.com/bluery0206/inBenta"><i class="fab fa-github"></i><span class="underline text-ellipse">inBenta</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206/fwipper" target="_blank" title="https://github.com/bluery0206/fwipper"><i class="fab fa-github"></i><span class="underline text-ellipse">Fwipper</span></a></li>
+                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206/MRH_personal_web" target="_blank" title="https://github.com/bluery0206/MRH_personal_web"><i class="fab fa-github"></i><span class="underline text-ellipse">MRH_personal_web</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="my-2">&copy; 2024 Mark Ryan Hilario</div>
     </footer>
 </body>
 </html>
