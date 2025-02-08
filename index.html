@@ -4,137 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>
-    <title>Mark Ryan Hilario | Personal Website</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1c724ccd5b.js" crossorigin="anonymous"></script>
+    <title>Mark Ryan Hilario | Personal Website</title>
 </head>
 
-<body
-    <!-- the anchor tag only scrolls up to the name and does not fully display the bg if the href target is 'about-me' -->
-    <span id="top"></span>
-    
-
-    <!-- Navigation Bar -->
-    <nav class="shadow bg-white">
-        <div class="dropdown row center">
-            <button class="btn dropdown-btn"><span class="material-symbols-rounded" style="font-size: 2rem;">menu</span></button>
-        
-            <ul id="ul-nav" class="dropdown-content w-100 flex-wrap center list-style-none gap-5p row">
-                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#top">Back to top</a></li>
-                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#personal-info">About Me</a></li>
-                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#skill-set">Skillset</a></li>
-                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#portfolio">Portfolio</a></li>
-                <li class="btn nav-btn"><a class="text-deco-none text-black" href="#contacts">Contacts</a></li>
-            </ul>
-        </div>
-    </nav>
-    
+<body>
     <main>
-        <div id="hero" class="bg-hero section row gap-1  text-white justify-around align-center">
-            <div id="hero-container" class="col gap-1 max-width-40">
-                <h1>Mark Ryan Hilario</h1>
-                <h3>BSCS 3-A</h3>
-                <p><small>Aspiring Developer & Creative Soul</small></p>  
-                              
-                <ul class="list-style-none gap-1 row flex-wrap">
-                    <li class="btn"><a class="text-deco-none text-white" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" target="_blank" title="Personal Facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li class="btn"><a class="text-deco-none text-white" href="https://github.com/bluery0206" title=":https//github.com/bluery0206"><i class="fab fa-github"></i></a></li>
-                    <li class="btn"><a class="text-deco-none text-white" href="mailto: hilariomarkryan3@gmail.com" target="_blank" title="Personal Email"><i class="fab fa-google"></i></a></li>
-                    <li class="btn"><a class="text-deco-none text-white" href="mailto: markryan.hilario@bisu.edu.ph" target="_blank" title="School Email"><i class="fab fa-google"></i></a></li>
-                </ul>
-               
-                <a class="text-white my-1 text-deco-none" href="#personal-info">Scroll for more &#62;&#62;</a>
+        <div id="hero" class="section">
+            <div class="left">
+                <img class="background" src="assets/images/hero/background.png" alt="">
+                <img class="midground" src="assets/images/hero/midground.png" alt="">
+                <img class="foreground" src="assets/images/hero/foreground.png" alt="">
             </div>
-            
-            <!-- Empty div supposedly for easy wrapping for responsiveness -->
-            <div></div>
-        </div>
-       
-       
-        <!-- PERSONAL INFO -->
-        
-        <section id="personal-info" class="section shadow bg-white row center">
-            <div id="personal-info-container" class="row justify-center gap-1">
-                <div id="pic-left" class="col justify-center w-30 gap-1">
-                        <a id="pfp-container" href="media/profiles/pfp.jpg"><img id="pfp" class="object-fit-cover w-100" src="media/profiles/pfp.jpg" alt="profile picture"></a>
-                    <div class="col ">
-                        <p>Hi, it's me</p>
-                        <h2 class="display-1">Mark Ryan Hilario</>
+            <div class="right">
+                <div></div>
+
+                <div class="details">
+                    <div class="name">
+                        MARK RYAN I. HILARIO
+                        <i class="fa-solid fa-angles-right"></i>
                     </div>
-                    
-                    <ul class="list-style-none col gap-05">
-                        <li class="row align-center"><span class="material-symbols-rounded" style="font-size: 1rem;">cake</span> <small>Sept 06, 2002</small></li>
-                        <li class="row align-center"><span class="material-symbols-rounded" style="font-size: 1rem;">home</span> <small>Poblacion Sur, Clarin, Bohol</small></li>
-                        
-                        <ul class="list-style-none row gap-1">
-                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">music_note</span></li>
-                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">stylus_note</span></li>
-                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">animation</span></li>
-                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">movie</span></li>
-                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">edit</span></li>
-                            <li class="row align-center gap-05"><span class="material-symbols-rounded" style="font-size: 1rem;">code</span></li>
-                        </ul>
-                    </ul>
+
+                    <div class="school">
+                        <div class="school-name">BOHOL ISLAND STATE UNIVERSITY - CLARIN CAMPUS</div>
+                        <hr>
+                        <div class="school-program">BACHELOR OF SCIENCE IN COMPUTER SCIENCE</div>
+                    </div>
                 </div>
-                
-                <div id="pic-right" class="col w-30 px-1 py-2 align-center gap-1 bg-blue-m text-white">
-                    <p class="cabin">a third-year college student at Bohol Island State University pursuing computer science.</p>
-                    <p class="cabin">I have a good foundation in web development, with a focus on MySQL, PHP, HTML, and CSS.</p>
-                    <p class="cabin">I've developed practical knowledge in creating dynamic and responsive web applications through my education and practical assignments.</p>
+
+                <div class="credo">Aspiring Developer & Creative Soul</div>
+
+                <div class="icon-list">
+                    <a href="https://web.facebook.com/hilario.markryan.i" target="_blank" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>hilario.markryan.i</span>
+                    </a>
+                    <a href="https://github.com/bluery0206" target="_blank" title="Github">
+                        <i class="fa-brands fa-github"></i>
+                        <span>bluery0206</span>
+                    </a>
+                    <a href="mailto: hilariomarkryan3@gmail.com" target="_blank" title="Gmail">
+                        <i class="fa-brands fa-google"></i>
+                        <span>hilariomarkryan3@gmail.com</span>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
 
+            
+        <nav>
+            <!-- <button class="btn dropdown-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button> -->
 
-        <!-- SKILL SET -->
+            <!-- <div> -->
+                <a href="#hero">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <span>Top</span>
+                </a>
+                <a href="#personal-info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    About Me
+                </a>
+                <a href="#skill-set">
+                    <i class="fa-solid fa-toolbox"></i>
+                    Skillset
+                </a>
+                <a href="#portfolio">
+                    <i class="fa-regular fa-folder-open"></i>
+                    Portfolio
+                </a>
+                <a href="#contacts">
+                    <i class="fa-solid fa-address-book"></i>
+                    Contacts
+                </a>
+            <!-- </div> -->
+        </nav>
+
         
-        <section id="skill-set" class="section col center gap-2 bg-blue-d text-white">
+        <div id="personal-info" class="section">
+            <div>
+                <div class="left">
+                    <img src="media/profiles/pfp.jpg" alt="profile picture">
+                    <p>Hi, it's me</p>
+                    <h2>Mark Ryan Hilario</h2>
+    
+                    <div>
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <span>Sept 06, 2002</span>
+                    </div>
+    
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Poblacion Sur, Clarin, Bohol</span>
+                    </div>
+    
+                    <div class="icon-list">
+                        <i class="fa-solid fa-music"></i>
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <i class="fa-solid fa-film"></i>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </div>
+    
+                <div class="right">
+                    <p>A fourth-year college student pursuing Computer Science at Bohol Island State University.</p>
+                    <p>I have a solid foundation in web development, specializing in MySQL, PHP, HTML, and CSS, and experience creating dynamic and responsive web applications through coursework and practical assignments.</p>
+                    <p>My learning extends beyond web development, and I've recently explored game development with Godot and backend development with Django.</p>
+                    <p>I'm a strong believer in learning by doing repeatedly, and I've honed my skills through personal projects, including replicating existing websites to gain practical experience.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skillset" class="section">
             <h2>MY SKILLSET</h2>
-            
-            <div class="col gap-1 align-center">
-                <h4>Beginner+ Level</h4>
-                
-                <ul class="row gap-2 list-style-none justify-center">
-                    <li class="row align-center w-10"><img class="w-100" src="media/icons/html.png" alt="html logo"></li>
-                    <li class="row align-center w-10"><img class="w-100" src="media/icons/css.png" alt="css logo"></li>
-                    <li class="row align-center w-10"><img class="w-100" src="media/icons/php.png" alt="php logo"></li>
-                    <li class="row align-center w-10"><img class="w-100" src="media/icons/mysql.png" alt="mysql logo"></li>
-                </ul>
+
+            <div class="tier tier-1">
+                <img src="assets/images/programming/languages/php-logo.png" title="php" alt="php logo">
+                <img src="assets/images/programming/languages/python-logo.png" title="python" alt="python logo">
             </div>
-            
-            <div class="col gap-1 align-center">
-                <h5>Introduction Level</h5>
-                
-                <ul class="row gap-2 list-style-none justify-center">
-                    <li class="row align-center w-5"><img class="w-100" src="media/icons/python.png" alt="python logo"></li>
-                    <li class="row align-center w-5"><img class="w-100" src="media/icons/java.png" alt="java logo"></li>
-                    <li class="row align-center w-5"><img class="w-100" src="media/icons/javascript.png" alt="javascript logo"></li>
-                    <li class="row align-center w-5"><img class="w-100" src="media/icons/android-studio.png" alt="android studio logo"></li>
-                </ul>
+
+            <div class="tier tier-2">
+                <img src="assets/images/programming/frameworks/godot-logo.png" title="godot" alt="godot logo">
+                <img src="assets/images/programming/languages/markup/html-logo.png" title="html" alt="html logo">
+                <img src="assets/images/programming/languages/styling/css-logo.png" title="css" alt="css logo">
+                <img src="assets/images/programming/frameworks/django-logo.png" title="django" alt="django logo">
             </div>
-            
-            <div class="row justify-around align-center gap-1">
+
+            <div class="tier tier-3">
+                <img src="assets/images/programming/databases/mysql-logo.png" title="mysql" alt="mysql logo">
+                <img src="assets/images/programming/languages/javascript-logo.png" title="javascript" alt="javascript logo">
+                <img src="assets/images/programming/languages/java-logo.png" title="java" alt="java logo">
+            </div>
+
+            <div>
                 <p>Need help?</p>
-                <a class="row align-center btn btn-white gap-05" href="#contacts" alt="connect button"><span class="material-symbols-rounded" style="font-size: 1rem;">link</span>Connect</i></a>
+                <a href="#contacts" alt="connect button">
+                    <i class="fa-solid fa-link"></i>
+                    <span>Connect</span>
+                </a>
             </div>
-        </section>
+        </div>
 
 
-        <!-- PORTFOLIO -->
-        
-        <section id="portfolio" class="section col center gap-2">
+        <section id="portfolio" class="section">
             <h2>PORTFOLIO</h2>
-            
-            <div id="project-list" class="row gap-1 w-100 justify-center flex-wrap">
-                
+
+            <div>
                 <!-- inBenta -->
                 <div class="project col gap-1 w-40 py-1 px-2 bg-white justify-between shadow">
                     <div class="col">
                         <h4 class="text-center">inBenta</h4>
                         <p class="text-wrap">School Project: An inventory management system</p>   
                     </div>
-                    
+
                     <div class="row flex-wrap w-100 gap-1 justify-center">
                         <a class="w-40" href="media/portfolio/inbenta/inbenta_1.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_1.png" alt=""></a>
                         <a class="w-40" href="media/portfolio/inbenta/inbenta_2.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_2.png" alt=""></a>
@@ -142,10 +168,10 @@
                         <a class="w-40" href="media/portfolio/inbenta/inbenta_4.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_4.png" alt=""></a>
                         <a class="w-40" href="media/portfolio/inbenta/inbenta_5.png"><img class="w-100" src="media/portfolio/inbenta/inbenta_5.png" alt=""></a>
                     </div>
-                    
+
                     <div class="row justify-between align-center">
                         <a href="https://github.com/bluery0206/inBenta" target="_blank"><i class="fab fa-github">Github Repo</i></a>
-<!--                         <a href="inbentaproject.000webhostapp.com"><span class="underline text-ellipse">Visit website</span></a> -->
+                        <!--                         <a href="inbentaproject.000webhostapp.com"><span class="underline text-ellipse">Visit website</span></a> -->
                     </div>
                 </div>
 
@@ -155,7 +181,7 @@
                         <h4 class="text-center">Fwipper</h4>
                         <p class="text-wrap">Personal Project: an attempt to replicate X or Twitter</p>        
                     </div>
-                    
+
                     <div class="row flex-wrap w-100 gap-1 justify-center">
                         <a class="w-40" href="media/portfolio/fwipper/fwipper_1.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_1.png" alt=""></a>
                         <a class="w-40" href="media/portfolio/fwipper/fwipper_2.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_2.png" alt=""></a>
@@ -165,10 +191,10 @@
                         <a class="w-40" href="media/portfolio/fwipper/fwipper_6.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_6.png" alt=""></a>
                         <a class="w-40" href="media/portfolio/fwipper/fwipper_7.png"><img class="w-100" src="media/portfolio/fwipper/fwipper_7.png" alt=""></a>
                     </div>
-                    
+
                     <div class="row justify-between align-center">
                         <a href="https://github.com/bluery0206/fwipper" target="_blank"><i class="fab fa-github">Github Repo</i></a>
-<!--                         <a href="fwipper.000webhostapp.com"><span class="underline text-ellipse">Visit website</span></a> -->
+                        <!--                         <a href="fwipper.000webhostapp.com"><span class="underline text-ellipse">Visit website</span></a> -->
                     </div>
                 </div>
             </div>
@@ -176,74 +202,99 @@
     </main>
 
 
-
-    <!-- FOOTER -->
-        
-    <footer id="contacts" class="section col bg-grey-d align-center justify-between text-white">
-        
-        <div class="col align-center w-fit">
-            <div id="contacts-container" class="row gap-2">
-                <div class="max-width-20 col justify-center">
+    <footer id="contacts" class="section">
+        <div>
+            <div>
+                <div>
                     <h2>MARK RYAN HILARIO</h2>
                     <h4>BSCS 3-A</h4>
                 </div>
-                
-                <div class="col gap-2 justify-center max-width-20 text-wrap">
-                    <div class="col gap-05">
+
+                <div>
+                    <div>
                         <h4>Links</h4>
-                        
-                        <ul class="list-style-none col gap-05">
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" target="_blank" title="https://www.facebook.com/profile.php?id=100069249543203&mibextid"><i class="fab fa-facebook"></i><span class="underline text-ellipse">Mark Ryan Hilario</span></a></li>
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206" target="_blank" title="https://github.com/bluery0206"><i class="fab fa-github"></i><span class="underline text-ellipse">bluery0206</span></a></li>
-                        </ul>
+
+                        <a href="https://www.facebook.com/profile.php?id=100069249543203&mibextid" target="_blank" title="https://www.facebook.com/profile.php?id=100069249543203&mibextid">
+                            <i class="fab fa-facebook"></i>
+                            <span class="underline text-ellipse">Mark Ryan Hilario</span>
+                        </a>
+                        <a href="https://github.com/bluery0206" target="_blank" title="https://github.com/bluery0206">
+                            <i class="fab fa-github"></i>
+                            <span class="underline text-ellipse">bluery0206</span>
+                        </a>
                     </div>
-                
-                    <div class="col gap-05">
+
+                    <div>
                         <h4>Emails</h4>
-                        
-                        <ul class="list-style-none col gap-05">
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="mailto: hilariomarkryan3@gmail.com" title="hilariomarkryan3@gmail.com"><i class="fab fa-google"></i><span class="underline text-ellipse">hilariomarkryan3@gmail.com</span></a></li>
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="mailto: markryan.hilario@bisu.edu.ph" title="markryan.hilario@bisu.edu.ph"><span class="material-symbols-rounded" style="font-size: 1rem;">book</span><span class="underline text-ellipse">markryan.hilario@bisu.edu.ph</span></a></li>
-                        </ul>
+
+                        <a href="mailto: hilariomarkryan3@gmail.com" title="hilariomarkryan3@gmail.com">
+                            <i class="fab fa-google"></i>
+                            <span class="underline text-ellipse">hilariomarkryan3@gmail.com</span>
+                        </a>
+                        <a href="mailto: markryan.hilario@bisu.edu.ph" title="markryan.hilario@bisu.edu.ph">
+                            <span class="material-symbols-rounded" style="font-size: 1rem;">book</span>
+                            <span class="underline text-ellipse">markryan.hilario@bisu.edu.ph</span>
+                        </a>
                     </div>
-        
-                    <div class="col gap-05">
+
+                    <div>
                         <h4>Unrelated Personal Links</h4>
-                        
-                        <ul class="list-style-none col gap-05">
-<!--                             <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://www.facebook.com/hilariomrkryn" target="_blank" title="https://www.facebook.com/hilariomrkryn"><i class="fab fa-facebook"></i><span class="underline text-ellipse">Ryan Hilario</span></a></li> -->
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP" target="_blank" title="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP"><i class="fab fa-youtube"></i><span class="underline text-ellipse">Ryan</span></a></li>
-<!--                             <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://x.com/bluery___?s=09" target="_blank" title="https://x.com/bluery___?s=09"><i class="fab fa-twitter"></i><span class="underline text-ellipse">bluery___</span></a></li> -->
-                        </ul>
+
+                        <a href="https://www.facebook.com/hilariomrkryn" target="_blank" title="https://www.facebook.com/hilariomrkryn">
+                            <i class="fab fa-facebook"></i>
+                            <span class="underline text-ellipse">Ryan Hilario</span>
+                        </a>
+                        <a href="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP" target="_blank" title="https://youtube.com/@MarkRyanHilario?si=Duo6aA9lnRmPb_OP">
+                            <i class="fab fa-youtube"></i>
+                            <span class="underline text-ellipse">Ryan</span>
+                        </a>
+                        <a href="https://x.com/bluery___?s=09" target="_blank" title="https://x.com/bluery___?s=09">
+                            <i class="fab fa-twitter"></i>
+                            <span class="underline text-ellipse">bluery___</span>
+                        </a>
                     </div>
                 </div>
-            
-                <div class="col gap-2 max-width-20">
-<!--                     <div class="col gap-05">
+
+                <div>
+                    <div>
                         <h4>Personal Project Links</h4>
-                        
-                        <ul class="list-style-none col gap-05">
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://inbentaproject.000webhostapp.com" target="_blank" title="inbentaproject.000webhost.com"><span class="material-symbols-rounded" style="font-size: 1rem;">inventory</span><span class="underline text-ellipse">inBenta</span></a></li>
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://fwipper.000webhostapp.com" target="_blank" title="fwipper.000webhost.com"><i class="fab fa-twitter"></i><span class="underline text-ellipse">Fwipper</span></a></li>
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://bluery0206.github.io" target="_blank" title="https://bluery0206.github.io"><i class="fab fa-github"></i><span class="underline text-ellipse">MRH Personal Website</span></a></li>
-                        </ul>
-                    </div> -->
-            
-                    
-                    <div class="col gap-05">
+
+                        <a href="https://inbentaproject.000webhostapp.com" target="_blank" title="inbentaproject.000webhost.com">
+                            <span class="material-symbols-rounded" style="font-size: 1rem;">inventory</span>
+                            <span class="underline text-ellipse">inBenta</span>
+                        </a>
+                        <a href="https://fwipper.000webhostapp.com" target="_blank" title="fwipper.000webhost.com">
+                            <i class="fab fa-twitter"></i>
+                            <span class="underline text-ellipse">Fwipper</span>
+                        </a>
+                        <a href="https://bluery0206.github.io" target="_blank" title="https://bluery0206.github.io">
+                            <i class="fab fa-github"></i>
+                            <span class="underline text-ellipse">MRH Personal Website</span>
+                        </a>
+                    </div>
+
+
+                    <div>
                         <h4>Personal Project Github Repository</h4>
-                        
-                        <ul class="list-style-none col gap-05">
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206/inBenta" target="_blank" title="https://github.com/bluery0206/inBenta"><i class="fab fa-github"></i><span class="underline text-ellipse">inBenta</span></a></li>
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206/fwipper" target="_blank" title="https://github.com/bluery0206/fwipper"><i class="fab fa-github"></i><span class="underline text-ellipse">Fwipper</span></a></li>
-                            <li><a class="text-deco-none text-white text-ellipse row gap-05" href="https://github.com/bluery0206/bluery0206.github.io" target="_blank" title="https://github.com/bluery0206/bluery0206.github.io"><i class="fab fa-github"></i><span class="underline text-ellipse">Personal website</span></a></li>
-                        </ul>
+
+                        <a href="https://github.com/bluery0206/inBenta" target="_blank" title="https://github.com/bluery0206/inBenta">
+                            <i class="fab fa-github"></i>
+                            <span class="underline text-ellipse">inBenta</span>
+                        </a>
+                        <a href="https://github.com/bluery0206/fwipper" target="_blank" title="https://github.com/bluery0206/fwipper">
+                            <i class="fab fa-github"></i>
+                            <span class="underline text-ellipse">Fwipper</span>
+                        </a>
+                        <a href="https://github.com/bluery0206/bluery0206.github.io" target="_blank" title="https://github.com/bluery0206/bluery0206.github.io">
+                            <i class="fab fa-github"></i>
+                            <span class="underline text-ellipse">Personal website</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="my-2">&copy; 2024 Mark Ryan Hilario</div>
+
+        <div>&copy; 2024 Mark Ryan Hilario</div>
     </footer>
 </body>
 </html>
