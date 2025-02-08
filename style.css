@@ -28,6 +28,7 @@
     src: url("assets/fonts/hoppipola.otf")
 }
 
+
 :root {
 
     --max-tier-img-size: 200px;
@@ -44,6 +45,7 @@
     font-family     : Montserrat-Regular;
 }
 
+
 body{
     /* background: #12213b; */
     background: #F8F8FF;
@@ -52,12 +54,15 @@ body{
 
 
 a {
+    /* border: 1px solid red; */
     color: inherit;
     display: flex;
     align-items: center;
     gap: 0.5em;
     text-decoration: none;
+    padding: 0.25em 0.5em;
 }
+
 
 nav {
     /* border      : 1px solid red; */
@@ -71,11 +76,14 @@ nav {
    
 }
 
+
 .section:not(#hero) {
     /* border: 1px solid yellow; */
     min-height: 90dvh;
     padding: 2em;
+    padding-top: 4em;
 }
+
 
 #hero {
     /* border: 1px solid red; */
@@ -161,7 +169,7 @@ nav {
         }
 
         .icon-list {
-            gap: 2em;
+            gap: 1em;
             font-size: 0.8em;
             color: var(--bisu-gold);
         }
@@ -172,26 +180,6 @@ nav {
     }
 }
 
-#personal-info {
-    /* border          : 1px solid purple; */
-    display: grid;
-    grid-template-columns: 25% 25%;
-    align-items: center;
-    justify-content: center;
-
-    .left, .right {
-        /* border: 1px solid red; */
-        padding: 2em;
-    }
-}
-
-#skillset {
-    /* border          : 1px solid purple; */
-    display         : flex;
-    flex-direction  : column;
-    align-items     : center;
-    gap             : 1em;
-}
 
 
 .tier {
@@ -213,6 +201,125 @@ nav {
 }
 .tier-3 img {
     height: calc(var(--max-tier-img-size) * .25);
+}
+
+
+
+#personal-info {
+    /* border          : 1px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.personal-info-container {
+    /* border          : 1px solid purple; */
+    display: flex;
+    justify-content: center;
+
+    .left, .right {
+        /* border: 1px solid red; */
+        padding: 2em;
+        width: 30%;
+    }
+
+    .right {
+        background: #12213b;
+        color: white;
+        display: grid;
+        gap: 0.5em
+    }
+
+}
+
+
+#skillset {
+    /* border          : 1px solid purple; */
+    display         : flex;
+    flex-direction  : column;
+    background: #12213b;
+    align-items     : center;
+    color: white;
+    gap             : 2em;
+}
+
+
+#portfolio {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    /* border: 1px solid yellow; */
+
+    .project {
+        border: 1px solid #242526;
+        padding: 2em;
+        height: fit-content;
+        border-radius: 10px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        .image-list {
+            display: grid;
+            grid-template-columns: 49% 49%;
+            gap: 1em;
+
+            img {
+                width: 200px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+#contacts {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20dvw;
+    color: white;
+    background: #2F2F2F;
+}
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.col {
+    /* border: 1px solid yellow; */
+    display: grid;
+    row-gap: 1em;
+}
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: start;
+}
+
+.row {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    h4 {
+        padding-bottom: 0.5em;
+    }
 }
 
 .icon-list {
