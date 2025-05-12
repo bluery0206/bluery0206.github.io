@@ -50,6 +50,8 @@ body{
     /* background: #12213b; */
     background: #F8F8FF;
     color: #2A2A2A;
+    width:100dvw;
+    overflow-x:hidden;
 }
 
 
