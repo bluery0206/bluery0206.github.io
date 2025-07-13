@@ -1,0 +1,97 @@
+
+.btn {
+    text-decoration: none;
+    background: none;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: var(--fs-regular);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: var(--text-light);
+    gap: 0.5em;
+    padding: 0.25em 0.5em;
+    width: fit-content;
+}
+
+
+.btn-sm { font-size: var(--fs-4); }
+.btn-xsm { font-size: var(--fs-5); }
+
+
+.btn:hover, 
+.btn:focus, 
+.btn::after {
+    filter: 
+        brightness(120%)
+        drop-shadow(0 0 3px var(--glow-t12))
+    ;
+}
+.btn:active {
+    filter: brightness(140%);
+}
+
+
+.btn[data-variant] {
+    color: var(--text-white);
+}
+.btn[data-variant="cta"] {
+    background: var(--accent);
+}
+.btn[data-variant="primary"] {
+    background: var(--primary);
+}
+.btn[data-variant="danger"] {
+    background: var(--danger);
+}
+.btn[data-variant="secondary"] {
+    background: var(--secondary);
+}
+.btn[data-variant="success"] {
+    background: var(--success);
+}
+.btn[data-variant="hero"] {
+    color: var(--accent);
+    font-weight: 400;
+}
+
+
+.btn[data-variant="project"] {
+    font-weight: normal;
+    color: var(--text-muted);
+
+    > span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    > .logo {
+        /* border: 1px solid red; */
+        border-radius: 6px;
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+        filter: drop-shadow(2px 2px 2px var(--glow-t12));
+    }
+}
+.btn[data-variant="project"][data-active] {
+    /* background: var(--accent); */
+    outline: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: 500;
+
+    > .logo {
+        filter: drop-shadow(2px 2px 2px var(--shadow-t25));
+    }
+}
+
+.btn[data-variant="contact"] {
+    border: 1px solid var(--accent);
+    padding: 0.5em 1em;
+    color: var(--accent);
+    font-weight: 600;
+}

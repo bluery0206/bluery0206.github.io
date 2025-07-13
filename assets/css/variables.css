@@ -1,0 +1,84 @@
+
+:root {
+    --shadow: rgba(0, 0, 0, 1);
+    --shadow-t75: rgba(0, 0, 0, 0.75);
+    --shadow-t50: rgba(0, 0, 0, 0.50);
+    --shadow-t25: rgba(0, 0, 0, 0.25);
+    --shadow-t12: rgba(0, 0, 0, 0.125);
+    --shadow-t00: rgba(0, 0, 0, 0);
+
+    --glow: rgba(255, 255, 255, 1);
+    --glow-t75: rgba(255, 255, 255, 0.75);
+    --glow-t50: rgba(255, 255, 255, 0.50);
+    --glow-t25: rgba(255, 255, 255, 0.25);
+    --glow-t12: rgba(255, 255, 255, 0.125);
+
+    --primary: rgb(18, 33, 59);
+    --primary-t75: rgba(18, 33, 5, 0.75);
+    --primary-t50: rgba(18, 33, 5, 0.50);
+    --primary-t25: rgba(18, 33, 5, 0.25);
+    --primary-t12: rgba(18, 33, 5, 0.125);
+
+    --link: #6182de;
+    --accent: rgb(244, 143, 48);
+    
+    --success: rgb(31, 123, 52);
+    --danger: rgb(220, 53, 69);
+    --warning: rgb(255, 193, 7);
+    --secondary: rgb(123, 123, 123);
+    --info: rgb(23, 162, 184);
+
+    /* Light mode */
+    --light: rgb(248, 249, 250);
+    --light-t50: rgba(248, 249, 250, 0.50);
+    --light-t25: rgba(248, 249, 250, 0.25);
+
+    --white: rgb(255, 255, 255);
+    --white-t75: rgba(255, 255, 255, .75);
+    --white-t50: rgba(255, 255, 255, .50);
+    --white-t25: rgba(255, 255, 255, .25);
+    --white-t12: rgba(255, 255, 255, .125);
+
+    --black: rgb(22, 22, 22);
+    --black-l1: rgb(28, 28, 28);
+    --black-l2: rgb(40, 40, 40);
+
+    --black-t75: rgba(22, 22, 22, .75);
+    --black-t50: rgba(22, 22, 22, .50);
+
+    --dark: rgb(52, 58, 64);
+    --dark-t50: rgba(52, 58, 64, 0.50);
+    --dark-t25: rgba(52, 58, 64, 0.25);
+    --dark-t12: rgba(52, 58, 64, 0.125);
+
+    --secondary: rgb(108, 117, 125);
+    --secondary-t75: rgba(108, 117, 125, 0.75);
+    --secondary-t50: rgba(108, 117, 125, 0.5);
+    
+    /* Dark */
+    --white: rgb(238, 238, 238);
+    --white-t50: rgba(238, 238, 238, 0.50);
+    --white-t25: rgba(238, 238, 238, 0.25);
+
+    --light: rgb(170, 170, 170);
+    --light-t50: rgba(170, 170, 170, 0.50);
+    --light-t25: rgba(170, 170, 170, 0.25);
+
+    --text-light: var(--light);
+    --text-white: var(--white);
+    --text-dark: var(--dark);
+    --text-black: var(--black);
+    --text-primary: var(--primary);
+    --text-muted: var(--secondary);
+    --text-link: var(--link);
+
+    --fs-5: 0.8em;
+    --fs-4: 0.9em;
+    --fs-regular: 1em;
+    --fs-3: 1.25em;
+    --fs-2: 1.5em;
+    --fs-1: 3em;
+
+    --section-height: 500px;
+    --nav-height: 3em;
+}

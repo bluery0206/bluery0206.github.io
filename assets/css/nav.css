@@ -1,0 +1,30 @@
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    padding: 0.5em;
+    min-height: 3em;
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px 5px 2px var(--shadow-t12);
+    background: var(--black-t75);
+    background-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav { 
+        gap: 0.5em;
+
+        > .btn > i {
+            display: none;
+        }
+    }
+} 
+

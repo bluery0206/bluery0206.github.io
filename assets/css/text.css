@@ -1,0 +1,6 @@
+
+.text-white { color: var(--white); }
+.text-light { color: var(--light); }
+.text-muted { color: var(--secondary); }
+.text-dark { color: var(--dark); }
+
