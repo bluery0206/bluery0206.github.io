@@ -1,0 +1,51 @@
+
+/* 
+    Author: Mark Ryan I. Hilario (bluery0206)
+    Date: Jun 15, 2025
+    From: QuickNotes
+*/
+
+@import 'variables.css';
+@import 'fonts.css';
+@import 'text.css';
+@import 'button.css';
+@import 'section.css';
+@import 'nav.css';
+
+* {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: var(--fs-regular);
+    scroll-behavior: smooth;
+}
+
+body { 
+    color: var(--text-light);
+    background: var(--black-l1);
+}
+
+/* main { padding: 1em; } */
+
+footer {
+    padding: 2em;
+    text-align: center;
+}
+/* 
+    Small	
+        up to 640px	
+        20" to 65"	
+        TVs	
+        320x569, 360x640, 480x854
+    Medium	
+        641 - 1007px	
+        7" to 12"	
+        Tablets	
+        960x540
+    Large	
+        1008px and up	
+        13" and up	
+        PCs, Laptops, Surface Hub	
+        1024x640, 1366x768, 1920x1080 
+*/
